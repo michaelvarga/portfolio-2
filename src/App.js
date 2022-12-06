@@ -10,13 +10,9 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Home />
+    <div>
+      <header >
+        <Home className="fluid-container vh-100 App-header"/>
       </header>
       <About />
       <Skills />
