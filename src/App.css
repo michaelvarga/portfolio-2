@@ -18,3 +18,13 @@
   top: 50%;
   bottom: 50%;
 }
+
+.intro {
+  position: absolute;
+  border: 1px solid red;
+  top: 40%;
+  left: 0;
+  right: 0;
+  padding-left: 10%;
+}
+/* container-sm bg-dark text-white position-absolute mx-5 */

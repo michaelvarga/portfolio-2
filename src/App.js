@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./Home";
 import About from "./About";
-import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -15,10 +14,9 @@ function App() {
         <Home className="fluid-container vh-100 App-header"/>
       </header>
       <About />
-      <Skills />
+      <Experience />
       <Projects />
       <Education />
-      <Experience />
       <Contact />
     </div>
   );
