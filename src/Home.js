@@ -7,8 +7,8 @@ const Home = () => {
     <div className="fluid-container vh-100 App-header d-flex position-relative">
       <div className="circle"/>
       <div className="intro">
-          <h6 className="display-6"><span role="img">{String.fromCodePoint(0x1f44b)}</span> HELLO, I'M</h6>
-          <h1 className="text-primary display-1">Michael</h1>
+          <h6 className="display-6"><span role="img">{String.fromCodePoint(0x1f44b)}</span> Hi, my name is</h6>
+          <h1 className="text-primary display-1">Mike Varga</h1>
           <div className="animated-typing display-6">
             <Typed
               strings = {["Full Stack Software Developer", "Mobile Developer", "Web Developer"]}
