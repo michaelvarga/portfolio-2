@@ -1,0 +1,32 @@
+$primary-color:#f5f5f5;
+$secondary-color: #3626a7;
+$text-color: #000;
+
+.about {
+  background-color: $primary-color;
+  font-size: 1.2rem;
+}
+
+.about-bg-left {
+  color: $text-color;
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  strong, h2, a{
+    color: $secondary-color;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .animated-typing {
+    font-size: 2rem;
+  }
+}
+.about-bg-right {
+  li {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+}
