@@ -4,7 +4,6 @@ import "./index.scss";
 const Experience = () => {
   return (
     <div className="fluid-container min-vh-100 experience p-5">
-      <h2>Experience & Education</h2>
       <div>
         <div>
           <h3>Experience</h3>
@@ -25,19 +24,6 @@ const Experience = () => {
             <h4>Accenture</h4>
             <div>
               <h5>Software Developer</h5>
-            </div>
-            <div>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h4>Cook County State's Attorney's Office</h4>
-            <div>
-              <h5>Data Analyst Intern</h5>
             </div>
             <div>
               <ul>
