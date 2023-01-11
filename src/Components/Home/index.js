@@ -2,46 +2,57 @@ import React from "react";
 import "./index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Typed from "react-typed";
+import { Button } from "@mui/material";
+
+const photo = require("../../Images/profile_photo.JPG");
+const resume = require("../../Images/Michael Varga Resume 2023.pdf");
 
 const Home = () => {
   return (
     <div className="fluid-container min-vh-100">
-      <div className="row vh-100">
-        <div className="col-md-8 d-flex bg-left align-items-center">
-          <div className="offset-sm-1">
-            <h6>
-              <span role="img">{String.fromCodePoint(0x1f44b)}</span> Hi, my
-              name is
-            </h6>
-            <h1><span>Mike Varga</span>.</h1>
-            <div className="animated-typing">
-              <Typed
-                strings={[
-                  "Full Stack Software Developer",
-                  "Mobile Developer",
-                  "Web Developer",
-                ]}
-                typeSpeed={75}
-                backSpeed={50}
-                loop
-              />
-            </div>
-            <div>
-              <p>
-                I’m a software engineer specializing in building (and
-                occasionally designing) exceptional digital experiences.
-                Currently, I’m focused on learning and transitioning careers
-                from tech consulting to software engineering.
-              </p>
-            </div>
-            <p>
-              <a className="btn btn-primary btn-lg" href="#" role="button">
-                Check out my resume!
-              </a>
-            </p>
+      <div className="row">
+        <div className="bg-left col-md-8 min-vh-100 d-flex flex-column justify-content-center ps-5">
+          <h6 className="ps-5">
+            <span role="img">{String.fromCodePoint(0x1f44b)}</span> Hi, my name
+            is
+          </h6>
+          <h1 className="ps-5">
+            <span>Mike Varga</span>.
+          </h1>
+          <div className="animated-typing ps-5">
+            <Typed
+              strings={[
+                "Full Stack Software Developer",
+                "Mobile Developer",
+                "Web Developer",
+              ]}
+              typeSpeed={75}
+              backSpeed={50}
+              loop
+            />
           </div>
+          <p className="w-75 ps-5 mt-5 mb-5">
+            I’m a software engineer specializing in building (and occasionally
+            designing) exceptional digital experiences.
+          </p>
+          <Button
+            variant="outlined"
+            className="p-2 ms-5"
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color: "#caff8a",
+              borderColor: "#caff8a",
+              maxWidth: "250px",
+            }}
+          >
+            Check out my resume!
+          </Button>
         </div>
-        <div className="col-md-4 bg-right"></div>
+        <div className="bg-right col-md-4 min-vh-100 d-flex align-items-center">
+          <img src={photo} className="profile-photo" alt="profile" />
+        </div>
       </div>
     </div>
   );

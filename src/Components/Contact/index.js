@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./index.scss";
-import { TextField, Button, IconButton, Snackbar, Alert } from "@mui/material";
+import { TextField, Button, Snackbar, Alert } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
 
@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div className="fluid-container min-vh-100 d-flex align-items-center justify-content-center contact">
-      <div className="m-5">
+      <div className="m-5 p-5 form-container">
         <div className="w-100">
           <h2 className="mb-3">Shoot me a message!</h2>
           <p className="mb-5">
