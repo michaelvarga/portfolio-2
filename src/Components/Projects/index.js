@@ -18,8 +18,7 @@ const Projects = () => {
             app has some similar features of traditional social media apps,
             including authentication, sending and approving friend requests,
             uploading stories, viewing and interacting with a user feed, and
-            more. It uses a Tensorflow.js for content moderation and Google
-            Cloud storage for media.
+            more. It uses a Tensorflow.js machine learning library for content moderation and Google Cloud for content and media storage.
           </p>
           <ul className="list-inline mt-2">
             <li className={liStyle}>React Native</li>
@@ -50,7 +49,7 @@ const Projects = () => {
         <div className={projectStyle}>
           <h3>Grace's Greens</h3>
           <p>
-            A full-stack e-commerce site that sells plants. Features account
+            A full-stack e-commerce site for selling plants. Features account
             authentication and guest/user cart and checkout.
           </p>
           <ul className="list-inline mt-2">
@@ -75,7 +74,7 @@ const Projects = () => {
         <div className={projectStyle}>
           <h3>National Background Investigation Services (NBIS)</h3>
           <p>
-            An enterprise application for the DoD that modernizes the way they
+            An enterprise application that I helped develop while working at Accenture for the DoD that modernizes the way they
             issue over one million security clearances annually.
           </p>
           <ul className="list-inline mt-2">

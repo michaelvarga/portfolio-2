@@ -44,7 +44,8 @@ const Contact = () => {
 
   return (
     <div className="fluid-container min-vh-100 d-flex align-items-center justify-content-center contact">
-      <div className="m-5 p-5 form-container">
+      <div className="m-5 p-3 contact-div">
+        <span className="form-span p-5">
         <div className="w-100">
           <h2 className="mb-3">Shoot me a message!</h2>
           <p className="mb-5">
@@ -137,6 +138,7 @@ const Contact = () => {
             Something went wrong!
           </Alert>
         </Snackbar>
+        </span>
       </div>
     </div>
   );

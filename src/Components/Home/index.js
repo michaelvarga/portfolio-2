@@ -77,7 +77,10 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-right col-md-4 min-vh-100 d-flex align-items-center">
-          <img src={photo} className="profile-photo" alt="profile" />
+          <div className="picture-div">
+              <span></span>
+          </div>
+          <img src={photo} className="profile-photo" alt="profile" id="profile-photo"/>
         </div>
       </div>
     </div>
