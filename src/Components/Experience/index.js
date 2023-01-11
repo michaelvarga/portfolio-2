@@ -1,12 +1,13 @@
 import React from "react";
 import "./index.scss";
+import programming from '../../assets/programming.svg';
 
 const Experience = () => {
   return (
     <div className="fluid-container min-vh-100 experience p-5">
       <div className="row">
-        <div className="col-md-4">
-          <h3>Over the past six years,</h3>
+        <div className="col-md-6 p-5">
+          <h3 className="mb-5"><span>Over the past six years</span>,</h3>
           <p>
             I've build products for companies and governments around the US,
             ranging from reporting tools to complex features for enterprise apps
@@ -18,6 +19,9 @@ const Experience = () => {
             <br/><br/>
             After discovering my passion for software development at Accenture, I left the company to join a full time, immersive web development bootcamp at Fullstack Academy with the intention of transitioning careers from consulting to software engineering.
           </p>
+        </div>
+        <div className="col-md-6 p-5 d-flex justify-content-center align-items-center">
+          <img src={programming} alt="programmer"/>
         </div>
         <div className="col-md-8"></div>
       </div>

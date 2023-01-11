@@ -14,10 +14,11 @@ const About = () => {
           Fast-forward to today, and I've had the privilege of developing software at <a href="https://www.accenture.com/" target="_blank" rel="noreferrer">a large consulting firm</a> that has had a massive operational impact on a federal client. I recently left that firm to join a <a href="https://www.fullstackacademy.com/" target="_blank" rel="noreferrer">web development bootcamp</a> to learn a new tech stack and change industries.
         </p>
       </div>
-      <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5 my-5">
+      <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5">
         <p>Here are a few technologies I've been working with recently:</p>
         <div>
-          <ul>
+          
+          <ul className="list-inline">
             <li>JavaScript (ES6+)</li>
             <li>React</li>
             <li>Python</li>

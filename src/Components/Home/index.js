@@ -3,9 +3,11 @@ import "./index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Typed from "react-typed";
 import { Button } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const photo = require("../../Images/profile_photo.JPG");
 const resume = require("../../Images/Michael Varga Resume 2023.pdf");
+const ACCENT_COLOR = "#caff8a";
 
 const Home = () => {
   return (
@@ -42,13 +44,37 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
             style={{
-              color: "#caff8a",
-              borderColor: "#caff8a",
+              color: ACCENT_COLOR,
+              borderColor: ACCENT_COLOR,
               maxWidth: "250px",
             }}
           >
             Check out my resume!
           </Button>
+          <div className="d-flex ms-5 mt-3">
+            <Button
+              href="https://github.com/michaelvarga"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              style={{
+                color: "#f5f5f5",
+              }}
+            >
+              <GitHub fontSize="large" />
+            </Button>
+            <Button
+              href="http://www.linkedin.com/in/mike-p-varga"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              style={{
+                color: "#f5f5f5",
+              }}
+            >
+              <LinkedIn fontSize="large" />
+            </Button>
+          </div>
         </div>
         <div className="bg-right col-md-4 min-vh-100 d-flex align-items-center">
           <img src={photo} className="profile-photo" alt="profile" />

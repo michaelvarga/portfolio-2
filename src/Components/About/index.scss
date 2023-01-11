@@ -1,10 +1,16 @@
-$primary-color:#f5f5f5;
+$primary-color: #f5f5f5;
 $secondary-color: #3626a7;
 $text-color: #000;
 
 .about {
   background-color: $primary-color;
   font-size: 1.2rem;
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
 }
 
 .about-bg-left {
@@ -14,7 +20,9 @@ $text-color: #000;
     font-size: 5rem;
   }
 
-  strong, h2, a{
+  strong,
+  h2,
+  a {
     color: $secondary-color;
     text-decoration: none;
     font-weight: bold;

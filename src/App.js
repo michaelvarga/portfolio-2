@@ -1,4 +1,3 @@
-import "./App.css";
 import Home from "./Components/Home/index";
 import About from "./Components/About/index";
 import Projects from "./Components/Projects/index";
@@ -12,7 +11,7 @@ export const WHITE = '#F5F5F5'
 
 function App() {
   return (
-    <div>
+    <div className="overflow-auto">
       <Home/>
       <About/>
       <Experience/>
