@@ -3,6 +3,7 @@ import "./index.scss";
 import { TextField, Button, Snackbar, Alert } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -43,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="fluid-container min-vh-100 d-flex align-items-center justify-content-center contact">
+    <div className="fluid-container min-vh-100 d-flex flex-column align-items-center justify-content-center contact">
       <div className="m-5 p-2 contact-div">
         <span className="form-span p-5">
         <div className="w-100">
@@ -140,6 +141,30 @@ const Contact = () => {
         </Snackbar>
         </span>
       </div>
+      <div>
+            <Button
+              href="https://github.com/michaelvarga"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              style={{
+                color: "#3626a7",
+              }}
+            >
+              <GitHub fontSize="large" />
+            </Button>
+            <Button
+              href="http://www.linkedin.com/in/mike-p-varga"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              style={{
+                color: "#3626a7",
+              }}
+            >
+              <LinkedIn fontSize="large" />
+            </Button>
+          </div>
     </div>
   );
 };
