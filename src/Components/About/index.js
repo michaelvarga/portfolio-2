@@ -8,12 +8,12 @@ const About = () => {
     <div className="fluid-container min-vh-100 d-flex row about p-5">
       <div className="col-md-6 d-flex flex-column justify-content-start about-bg-left p-5 my-5">
         <h2>About Me</h2>
-        <h3>
+        <h3 className="mt-3 mb-3">
           I'm a <strong>Full Stack Developer</strong> based in Chicago
         </h3>
         <p>
-          Hello! My name is Mike and I enjoy building things for the web. My
-          interest in programming started back in 2009 when I learned to hack my
+          Hello! My name is Mike, and I enjoy building things for the web. My
+          interest in programming started in 2009 when I learned to hack my
           favorite computer game, Microsoft Flight Simulator, and fly customized
           airplanes.
         </p>
