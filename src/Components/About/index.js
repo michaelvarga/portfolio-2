@@ -1,7 +1,14 @@
 import React from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faReact, faCss3, faJsSquare, faGitAlt, faPython } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faReact,
+  faCss3,
+  faJsSquare,
+  faGitAlt,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   return (
@@ -36,10 +43,8 @@ const About = () => {
         </p>
       </div>
       <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5">
-
-
         <div className="stage-cube-cont w-100 d-flex">
-          <div className="cubespinner">
+          <div className="cubespinner  d-none d-md-block">
             <div className="face1">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
