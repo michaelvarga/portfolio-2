@@ -29,6 +29,11 @@ $font-size-base: 1rem;
   .animated-typing {
     @include font-size(2rem);
   }
+
+  p {
+    max-width: 30rem;
+    // max-width: 500px;
+  }
 }
 .bg-right {
   background-color: $secondary-color;
@@ -47,7 +52,13 @@ a {
   color: $text-color;
 }
 
-.vector {
+.vector-left {
+  top: 60px;
+  right: 15%;
+  width: 50%;
+}
+
+.vector-right {
   top: 100px;
-  right: 0;
+  right: 5%;
 }
