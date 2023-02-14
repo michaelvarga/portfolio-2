@@ -6,6 +6,7 @@ import {
   faJsSquare,
   faPython,
   faBootstrap,
+  faNode
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
@@ -64,13 +65,13 @@ const About = () => {
                 <FontAwesomeIcon icon={faReact} color="#5ED4F4" className="cube-icon"/>
               </div>
               <div id="right">
-                <FontAwesomeIcon icon={faBootstrap} color="#F06529" className="cube-icon" />
+                <FontAwesomeIcon icon={faBootstrap} color="#fff" className="cube-icon" />
               </div>
               <div id="back">
-                <FontAwesomeIcon icon={faPython} color="#EC4" className="cube-icon" />
+                <FontAwesomeIcon icon={faNode} color="#fff" className="cube-icon" />
               </div>
               <div id="left">
-                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" className="cube-icon" />
+                <FontAwesomeIcon icon={faJsSquare} color="#303030" className="cube-icon" />
               </div>
               <div id="shadow"></div>
             </div>
