@@ -2,12 +2,10 @@ import React from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHtml5,
   faReact,
-  faCss3,
   faJsSquare,
-  faGitAlt,
   faPython,
+  faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
@@ -41,30 +39,7 @@ const About = () => {
           </a>{" "}
           to learn a new tech stack and change industries.
         </p>
-      </div>
-      <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5">
-        <div className="stage-cube-cont w-100 d-flex">
-          <div className="cubespinner  d-none d-md-block">
-            <div className="face1">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faGitAlt} color="#DD0031" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faPython} color="#EC4" />
-            </div>
-          </div>
-        </div>
+        {/* ---- */}
         <div>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul className="list-inline">
@@ -79,6 +54,27 @@ const About = () => {
             <li>Sass</li>
             <li>Bootstrap</li>
           </ul>
+        </div>
+      </div>
+      <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5">
+        <div id="wrapper">
+          <div className="container">
+            <div id="image-cube">
+              <div id="front">
+                <FontAwesomeIcon icon={faReact} color="#5ED4F4" className="cube-icon"/>
+              </div>
+              <div id="right">
+                <FontAwesomeIcon icon={faBootstrap} color="#F06529" className="cube-icon" />
+              </div>
+              <div id="back">
+                <FontAwesomeIcon icon={faPython} color="#EC4" className="cube-icon" />
+              </div>
+              <div id="left">
+                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" className="cube-icon" />
+              </div>
+              <div id="shadow"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
