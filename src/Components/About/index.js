@@ -57,7 +57,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="col-md-6 d-flex flex-column justify-content-lg-end about-bg-right p-5">
+      <div className="col-md-6 d-flex flex-column about-bg-right d-none d-md-flex">
         <div id="wrapper">
           <div className="container">
             <div id="image-cube">
