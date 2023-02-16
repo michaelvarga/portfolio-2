@@ -1,18 +1,25 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
   faJsSquare,
-  faPython,
   faBootstrap,
-  faNode
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
+  const { ref, inView } = useInView();
+
   return (
     <div className="fluid-container min-vh-100 d-flex row about p-5">
-      <div className="col-md-6 d-flex flex-column justify-content-start about-bg-left p-5 my-5">
+      <div
+        ref={ref}
+        className={`col-md-6 d-flex flex-column justify-content-start about-bg-left p-5 my-5 ${
+          inView && "slide-in"
+        }`}
+      >
         <h2>About Me</h2>
         <h3 className="mt-3 mb-3">
           I'm a <strong>Full Stack Developer</strong> based in Chicago
@@ -40,7 +47,6 @@ const About = () => {
           </a>{" "}
           to learn a new tech stack and change industries.
         </p>
-        {/* ---- */}
         <div>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul className="list-inline">
@@ -62,16 +68,32 @@ const About = () => {
           <div className="container">
             <div id="image-cube">
               <div id="front">
-                <FontAwesomeIcon icon={faReact} color="#5ED4F4" className="cube-icon"/>
+                <FontAwesomeIcon
+                  icon={faReact}
+                  color="#5ED4F4"
+                  className="cube-icon"
+                />
               </div>
               <div id="right">
-                <FontAwesomeIcon icon={faBootstrap} color="#fff" className="cube-icon" />
+                <FontAwesomeIcon
+                  icon={faBootstrap}
+                  color="#fff"
+                  className="cube-icon"
+                />
               </div>
               <div id="back">
-                <FontAwesomeIcon icon={faNode} color="#fff" className="cube-icon" />
+                <FontAwesomeIcon
+                  icon={faNode}
+                  color="#fff"
+                  className="cube-icon"
+                />
               </div>
               <div id="left">
-                <FontAwesomeIcon icon={faJsSquare} color="#303030" className="cube-icon" />
+                <FontAwesomeIcon
+                  icon={faJsSquare}
+                  color="#303030"
+                  className="cube-icon"
+                />
               </div>
               <div id="shadow"></div>
             </div>
