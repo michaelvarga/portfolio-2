@@ -1,12 +1,16 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import "./index.scss";
 import programming from '../../assets/programming.svg';
 
 const Experience = () => {
+  const { ref, inView } = useInView();
+
   return (
     <div className="fluid-container min-vh-100 experience p-5">
       <div className="row">
-        <div className="col-md-6 p-5">
+        <div className={`col-md-6 p-5 ${inView && "slide-in"}`} ref={ref}>
+          {/* col-md-6 p-5 */}
           <h3 className="mb-5"><span>Over the past six years</span>,</h3>
           <p>
             I've built products for companies and governments around the US,
