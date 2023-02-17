@@ -1,14 +1,21 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import "./index.scss";
 import { GitHub, Launch, YouTube } from "@mui/icons-material";
 
-const liStyle = "list-inline-item me-3";
-const projectStyle = "col-md-8 p-5 mb-5 project-container";
+const liStyle = "list-inline-item";
+const projectStyle = `col-md-8 p-5 mb-5 project-container`;
 
 const Projects = () => {
+  const { ref, inView } = useInView();
   return (
     <div className="fluid-container min-vh-100 p-5 projects">
-      <div className="d-flex flex-column align-items-center">
+      <div
+        className={`d-flex flex-column align-items-center ${
+          inView && "slide-in"
+        }`}
+        ref={ref}
+      >
         <h2 className="mb-5">Some Things I've Built</h2>
         <div className={projectStyle}>
           <h3>Happilist</h3>
@@ -18,8 +25,10 @@ const Projects = () => {
             app has some similar features of traditional social media apps,
             including authentication, sending and approving friend requests,
             uploading stories, viewing and interacting with a user feed, and
-            more. It uses a Tensorflow.js machine learning library for content moderation and Google Cloud for content and media storage.
+            more. It uses a Tensorflow.js machine learning library for content
+            moderation and Google Cloud for content and media storage.
           </p>
+          <span>Built With:</span>
           <ul className="list-inline mt-2">
             <li className={liStyle}>React Native</li>
             <li className={liStyle}>Expo</li>
@@ -36,14 +45,14 @@ const Projects = () => {
             rel="noreferrer"
             aria-label="GitHub"
           >
-            <GitHub />
+            View on Github <GitHub className="icon"/>
           </a>
           <a
             href="https://www.youtube.com/watch?v=qvU4MeqDAZk&ab_channel=MikeVarga"
             target="_blank"
             rel="noreferrer"
           >
-            <YouTube />
+            View Demo <YouTube className="icon" />
           </a>
         </div>
         <div className={projectStyle}>
@@ -52,6 +61,7 @@ const Projects = () => {
             A full-stack e-commerce site for selling plants. Features account
             authentication and guest/user cart and checkout.
           </p>
+          <span>Built With:</span>
           <ul className="list-inline mt-2">
             <li className={liStyle}>React</li>
             <li className={liStyle}>Node</li>
@@ -68,15 +78,17 @@ const Projects = () => {
             rel="noreferrer"
             aria-label="GitHub"
           >
-            <GitHub />
+            View on Github <GitHub className="icon" />
           </a>
         </div>
         <div className={projectStyle}>
           <h3>National Background Investigation Services (NBIS)</h3>
           <p>
-            An enterprise application that I helped develop while working at Accenture for the DoD that modernizes the way they
-            issue over one million security clearances annually.
+            An enterprise application that I helped develop while working at
+            Accenture for the DoD that modernizes the way they issue over one
+            million security clearances annually.
           </p>
+          <span>Built With:</span>
           <ul className="list-inline mt-2">
             <li className={liStyle}>Pegasystems</li>
             <li className={liStyle}>Javascript</li>
@@ -101,6 +113,7 @@ const Projects = () => {
             American Sign Language alphabet to spell out words using just a
             user's webcam.
           </p>
+          <span>Built With:</span>
           <ul className="list-inline mt-2">
             <li className={liStyle}>React</li>
             <li className={liStyle}>Node</li>
@@ -113,12 +126,13 @@ const Projects = () => {
             rel="noreferrer"
             aria-label="GitHub"
           >
-            <GitHub />
+            View on Github <GitHub className="icon" />
           </a>
         </div>
         <div className={projectStyle}>
           <h3>Portfolio Site</h3>
-          <div className="tools-used">
+          <div>
+            <span>Built With:</span>
             <ul className="list-inline mt-2">
               <li className={liStyle}>React</li>
               <li className={liStyle}>Bootstrap</li>
@@ -132,7 +146,7 @@ const Projects = () => {
               rel="noreferrer"
               aria-label="GitHub"
             >
-              <GitHub />
+              View on Github <GitHub className="icon" />
             </a>
           </div>
         </div>
