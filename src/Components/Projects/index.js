@@ -6,7 +6,7 @@ import { GitHub, Launch, YouTube } from "@mui/icons-material";
 const liStyle = "list-inline-item";
 const projectStyle = `col-md-8 p-5 mb-5 project-container`;
 const gracesGreens = require("../../Images/graces-greens.gif");
-const happiList = require("../../Images/happi-list.gif")
+const happiList = require("../../Images/happilist.gif")
 
 const Projects = () => {
   const { ref, inView } = useInView();
