@@ -5,6 +5,8 @@ import { GitHub, Launch, YouTube } from "@mui/icons-material";
 
 const liStyle = "list-inline-item";
 const projectStyle = `col-md-8 p-5 mb-5 project-container`;
+const gracesGreens = require("../../Images/graces-greens.gif");
+const happiList = require("../../Images/happi-list.gif")
 
 const Projects = () => {
   const { ref, inView } = useInView();
@@ -18,68 +20,83 @@ const Projects = () => {
       >
         <h2 className="mb-5">Some Things I've Built</h2>
         <div className={projectStyle}>
-          <h3>Happilist</h3>
-          <p>
-            A full-stack social media app that encourages you to be productive
-            and democratize your todo lists amongst your friends. This mobile
-            app has some similar features of traditional social media apps,
-            including authentication, sending and approving friend requests,
-            uploading stories, viewing and interacting with a user feed, and
-            more. It uses a Tensorflow.js machine learning library for content
-            moderation and Google Cloud for content and media storage.
-          </p>
-          <span>Built With:</span>
-          <ul className="list-inline mt-2">
-            <li className={liStyle}>React Native</li>
-            <li className={liStyle}>Expo</li>
-            <li className={liStyle}>React Hooks</li>
-            <li className={liStyle}>NoSQL</li>
-            <li className={liStyle}>Google Firebase</li>
-            <li className={liStyle}>Tensorflow.js</li>
-            <li className={liStyle}>Styled Components</li>
-          </ul>
+          <div className="row">
+            <div className="col-md-6">
+              <h3>Happilist</h3>
+              <p>
+                A full-stack social media app that encourages you to be
+                productive and democratize your todo lists amongst your friends.
+                This mobile app has some similar features of traditional social
+                media apps, including authentication, sending and approving
+                friend requests, uploading stories, viewing and interacting with
+                a user feed, and more. It uses a Tensorflow.js machine learning
+                library for content moderation and Google Cloud for content and
+                media storage.
+              </p>
+              <span>Built With:</span>
+              <ul className="list-inline mt-2">
+                <li className={liStyle}>React Native</li>
+                <li className={liStyle}>Expo</li>
+                <li className={liStyle}>React Hooks</li>
+                <li className={liStyle}>NoSQL</li>
+                <li className={liStyle}>Google Firebase</li>
+                <li className={liStyle}>Tensorflow.js</li>
+                <li className={liStyle}>Styled Components</li>
+              </ul>
 
-          <a
-            href="https://github.com/2204-cookiemonsters-capstone/amazing-app"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            View on Github <GitHub className="icon"/>
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=qvU4MeqDAZk&ab_channel=MikeVarga"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Demo <YouTube className="icon" />
-          </a>
+              <a
+                href="https://github.com/2204-cookiemonsters-capstone/amazing-app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                View on Github <GitHub className="icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=qvU4MeqDAZk&ab_channel=MikeVarga"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Demo <YouTube className="icon" />
+              </a>
+            </div>
+            <div className="col-md-6">
+            <img src={happiList} alt="Happilist" className="w-100"/>
+            </div>
+          </div>
         </div>
         <div className={projectStyle}>
-          <h3>Grace's Greens</h3>
-          <p>
-            A full-stack e-commerce site for selling plants. Features account
-            authentication and guest/user cart and checkout.
-          </p>
-          <span>Built With:</span>
-          <ul className="list-inline mt-2">
-            <li className={liStyle}>React</li>
-            <li className={liStyle}>Node</li>
-            <li className={liStyle}>Redux</li>
-            <li className={liStyle}>Express</li>
-            <li className={liStyle}>PostgreSQL</li>
-            <li className={liStyle}>Sequelize</li>
-            <li className={liStyle}>Bcrypt</li>
-            <li className={liStyle}>JSON Web Tokens</li>
-          </ul>
-          <a
-            href="https://github.com/FullStack-Sisko/GraceShopper"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            View on Github <GitHub className="icon" />
-          </a>
+          <div className="row">
+            <div className="col-md-6">
+              <h3>Grace's Greens</h3>
+              <p>
+                A full-stack e-commerce site for selling plants. Features
+                account authentication and guest/user cart and checkout.
+              </p>
+              <span>Built With:</span>
+              <ul className="list-inline mt-2">
+                <li className={liStyle}>React</li>
+                <li className={liStyle}>Node</li>
+                <li className={liStyle}>Redux</li>
+                <li className={liStyle}>Express</li>
+                <li className={liStyle}>PostgreSQL</li>
+                <li className={liStyle}>Sequelize</li>
+                <li className={liStyle}>Bcrypt</li>
+                <li className={liStyle}>JSON Web Tokens</li>
+              </ul>
+              <a
+                href="https://github.com/FullStack-Sisko/GraceShopper"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                View on Github <GitHub className="icon" />
+              </a>
+            </div>
+            <div className="col-md-6">
+              <img src={gracesGreens} alt="Grace's Greens" className="w-100"/>
+            </div>
+          </div>
         </div>
         <div className={projectStyle}>
           <h3>National Background Investigation Services (NBIS)</h3>
